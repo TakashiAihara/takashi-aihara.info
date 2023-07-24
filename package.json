@@ -8,12 +8,15 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
+    "deploy:prod": "vercel --prod",
+    "deploy:dev": "vercel",
     "astro": "astro"
   },
   "dependencies": {
     "@astrojs/mdx": "^0.19.7",
     "@astrojs/rss": "^2.4.3",
     "@astrojs/sitemap": "^2.0.1",
-    "astro": "^2.9.1"
+    "astro": "^2.9.1",
+    "vercel": "^31.0.4"
   }
 }
