@@ -18,5 +18,9 @@
     "@astrojs/sitemap": "^2.0.1",
     "astro": "^2.9.1",
     "vercel": "^31.0.4"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.0",
+    "prettier-plugin-astro": "^0.11.0"
   }
 }
