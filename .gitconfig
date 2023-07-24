@@ -1,0 +1,15 @@
+[remote "origin"]
+	url = https://github.com/TakashiAihara/takashi-aihara.info.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+
+[gitflow "branch"]
+	master = main
+	develop = develop
+
+[gitflow "prefix"]
+	feature = feature/
+	release = release/
+	hotfix = hotfix/
+	support = support/
+	versiontag =
+	bugfix = bugfix/
