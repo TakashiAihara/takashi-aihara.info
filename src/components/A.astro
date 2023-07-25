@@ -1,0 +1,12 @@
+---
+import type { ContentsKeys } from "../type";
+import { convertInitialUpperCase } from "../utils/convert";
+
+interface Props {
+  name: ContentsKeys;
+}
+
+const { name } = Astro.props;
+---
+
+<a href={`/${name}`}>{convertInitialUpperCase(name)}</a>

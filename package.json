@@ -13,10 +13,13 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/image": "^0.17.2",
     "@astrojs/mdx": "^0.19.7",
     "@astrojs/rss": "^2.4.3",
     "@astrojs/sitemap": "^2.0.1",
     "astro": "^2.9.1",
+    "astro-icon": "^0.8.1",
+    "sharp": "^0.32.4",
     "vercel": "^31.0.4"
   },
   "devDependencies": {

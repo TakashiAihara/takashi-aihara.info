@@ -1,12 +1,29 @@
 ---
-import HeaderLink from "./HeaderLink.astro";
+import type { HTMLAttributes } from "astro/types";
+import { Icon } from "astro-icon";
 
-interface Props {
-  href: string;
+type Props = HTMLAttributes<"a"> & {
+  icon: string;
   name: string;
-}
+  color: string;
+};
 
-const { href, name } = Astro.props;
+const { color, icon, name, href, class: className, ...props } = Astro.props;
 ---
 
-<HeaderLink {href} target="_blank">{name}</HeaderLink>
+<a {href} target="_blank" {...props}>
+  <div>
+    <Icon
+      name={icon}
+      style={`width: 24px; text-align: center; color: ${color}`}
+    />
+  </div>
+</a>
+<style>
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+</style>
