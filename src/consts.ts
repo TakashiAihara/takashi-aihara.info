@@ -107,7 +107,7 @@ export const DANCER_CARRIER_SUMMARY_SETTINGS = [
     year: 5,
   },
   {
-    summary: "B-Boying",
+    summary: "B-boying Breaking",
     year: 4,
   },
 ];
