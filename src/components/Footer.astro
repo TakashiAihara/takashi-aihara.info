@@ -1,13 +1,24 @@
 ---
+import { ASTRO_REPOSITORY_URL, SITE_REPOSITORY_URL } from "../consts";
+
 const today = new Date();
 ---
 
 <footer>
-  &copy; {today.getFullYear()} YOUR NAME HERE. All rights reserved.
+  <div>
+    <p>&copy; 2023, Built with <a href={ASTRO_REPOSITORY_URL}>Astro</a></p>
+    <p>Also, the source code of this site is in this <a href={SITE_REPOSITORY_URL}>Repository</a></p>
+  </div>
 </footer>
+
 <style>
   footer {
     padding: 25px;
     text-align: center;
+    font-size: small;
+
+    & p {
+      margin: 0 auto;
+    }
   }
 </style>

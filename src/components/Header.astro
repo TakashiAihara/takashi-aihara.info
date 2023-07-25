@@ -1,6 +1,7 @@
 ---
-import { SITE_TITLE } from "../consts";
+import { SITE_TITLE, SNS_SETTINGS } from "../consts";
 import HeaderLink from "./HeaderLink.astro";
+import HeaderSnsLink from "./HeaderSnsLink.astro";
 ---
 
 <header>
@@ -9,14 +10,13 @@ import HeaderLink from "./HeaderLink.astro";
   </h2>
   <nav>
     <HeaderLink href="/">Home</HeaderLink>
+    <HeaderLink href="/bio">Bio</HeaderLink>
+    <HeaderLink href="/skills">Skills</HeaderLink>
+    <HeaderLink href="/portfolio">Portfolio</HeaderLink>
     <HeaderLink href="/blog">Blog</HeaderLink>
-    <HeaderLink href="/about">About</HeaderLink>
-    <HeaderLink href="https://twitter.com/astrodotbuild" target="_blank">
-      Twitter
-    </HeaderLink>
-    <HeaderLink href="https://github.com/withastro/astro" target="_blank">
-      GitHub
-    </HeaderLink>
+    {SNS_SETTINGS.map(setting => (
+      <HeaderSnsLink name={setting.name} href={setting.url}/>
+    ))}
   </nav>
 </header>
 <style>

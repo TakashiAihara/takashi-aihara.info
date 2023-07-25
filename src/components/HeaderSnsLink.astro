@@ -1,0 +1,12 @@
+---
+import HeaderLink from "./HeaderLink.astro";
+
+interface Props {
+  href: string;
+  name: string;
+}
+
+const { href, name } = Astro.props;
+---
+
+<HeaderLink {href} target="_blank">{name}</HeaderLink>
