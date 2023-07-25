@@ -1,4 +1,9 @@
 module.exports = {
+  env: {
+    browser: true,
+    es2021: true,
+    node: true,
+  },
   ignorePatterns: ['*.d.ts'],
   extends: ['eslint:recommended', 'plugin:import/typescript', 'plugin:astro/recommended'],
   parserOptions: {
