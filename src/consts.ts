@@ -7,6 +7,9 @@ export const SITE_DESCRIPTION = "About TakashiAihara";
 export const SITE_REPOSITORY_URL = "https://github.com/TakashiAihara/takashi-aihara.info";
 export const ASTRO_REPOSITORY_URL = "https://github.com/withastro/astro";
 
+// SEO
+export const GA_ID = "G-HY8ZR2YW2P";
+
 // SNS URLs
 export const TWITTER_URL = "https://twitter.com/takashi__aihara";
 export const GITHUB_URL = "https://github.com/TakashiAihara";
