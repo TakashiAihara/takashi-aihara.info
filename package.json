@@ -3,13 +3,13 @@
   "type": "module",
   "version": "0.0.1",
   "private": true,
+  "packageManager": "pnpm@11.0.9",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "deploy:prod": "vercel --prod",
-    "deploy:dev": "vercel",
+    "deploy": "pnpm dlx wrangler pages deploy dist --project-name takashiaihara-site --branch main --commit-dirty=true",
     "astro": "astro"
   },
   "dependencies": {
