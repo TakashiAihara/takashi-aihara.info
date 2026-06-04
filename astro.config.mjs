@@ -8,8 +8,10 @@ import { defineConfig } from "astro/config";
 // Re-enable after the Astro upgrade in #13.
 
 // https://astro.build/config
+const siteDomain = process.env.SITE_DOMAIN || "profile.takashiaihara.site";
+
 export default defineConfig({
-  site: "https://takashiaihara.site",
+  site: `https://${siteDomain}`,
   integrations: [mdx(),
     image({
       serviceEntryPoint: '@astrojs/image/sharp',
