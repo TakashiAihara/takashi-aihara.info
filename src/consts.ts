@@ -5,7 +5,7 @@
 export const SITE_TITLE = "About TakashiAihara";
 export const SITE_DESCRIPTION = "About TakashiAihara";
 export const SITE_REPOSITORY_URL =
-  "https://github.com/TakashiAihara/takashi-aihara.info";
+  "https://github.com/TakashiAihara/profile.takashiaihara.site";
 export const ASTRO_REPOSITORY_URL = "https://github.com/withastro/astro";
 
 // SEO
