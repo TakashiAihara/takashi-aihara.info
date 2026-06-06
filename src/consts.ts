@@ -2,8 +2,9 @@
 // You can import this data from anywhere in your site by using the `import` keyword.
 
 // Site Core Information
-export const SITE_TITLE = "About TakashiAihara";
-export const SITE_DESCRIPTION = "About TakashiAihara";
+export const SITE_TITLE = "Takashi Aihara - Profile";
+export const SITE_DESCRIPTION =
+  "Full-stack engineer crossing infrastructure, backend, and frontend. AI-first development, IaC, and 60+ niche tech posts on Zenn.";
 export const SITE_REPOSITORY_URL =
   "https://github.com/TakashiAihara/profile.takashiaihara.site";
 export const ASTRO_REPOSITORY_URL = "https://github.com/withastro/astro";
@@ -77,11 +78,11 @@ export const HEADER_CONTENT_SETTINGS = [
 export const IT_CARRIER_SUMMARY_SETTINGS = [
   {
     summary: "Lead Web Developer (Tech Lead)",
-    year: 2,
+    year: 4,
   },
   {
     summary: "Backend Engineer",
-    year: 2,
+    year: 6,
   },
   {
     summary: "Frontend Engineer",
@@ -97,7 +98,7 @@ export const IT_CARRIER_SUMMARY_SETTINGS = [
   },
   {
     summary: "On-premises Infrastructure Engineer",
-    year: 2,
+    year: 4,
   },
 ];
 
@@ -114,19 +115,19 @@ export const DANCER_CARRIER_SUMMARY_SETTINGS = [
 
 export const BIO_SUMMARY_SETTINGS = [
   {
-    content: "I am working as a freelance IT engineer",
+    content: "Full-stack engineer crossing infra, backend, and frontend",
     emoji: "🧑‍💻",
   },
   {
-    content: "I also want to develop games",
-    emoji: "🎮",
+    content: "I lead delivery platform design & AI tooling at work",
+    emoji: "⚙️",
   },
   {
-    content: "I also worked as an amateur dancer",
-    emoji: "🕺",
+    content: "I share niche tech notes on Zenn (60+ posts)",
+    emoji: "📝",
   },
   {
-    content: "I want to create fun things!",
+    content: "I want to keep shipping fun things!",
     emoji: "✨",
   },
 ];
